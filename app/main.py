@@ -77,4 +77,4 @@ class Distance:
         try:
             return self.km >= float(other)
         except (TypeError, ValueError):
-             return NotImplemented
+            return NotImplemented
