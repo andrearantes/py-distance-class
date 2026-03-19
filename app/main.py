@@ -28,7 +28,7 @@ class Distance:
                 return NotImplemented
         return self
 
-    def __mul__(self, other: object) -> "Distance":
+    def __mul__(self, other: float) -> "Distance":
         try:
             return Distance(self.km * float(other))
         except (TypeError, ValueError):
